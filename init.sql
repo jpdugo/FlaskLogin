@@ -1,4 +1,3 @@
-CREATE DATABASE IF NOT EXISTS AccessControl;
 USE AccessControl;
 
 CREATE TABLE status (

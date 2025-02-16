@@ -15,10 +15,11 @@ def create_app():
 
     # Initialize extensions
     db.init_app(app)
+    
+    # Initialize API with a prefix
     api.init_app(app)
 
     # Register namespaces
-
     api.add_namespace(user_ns, path='/users')
 
     return app
