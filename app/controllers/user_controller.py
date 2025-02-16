@@ -5,7 +5,7 @@ from app.schemas.dto.validate_user_request import ValidateUserRequest
 
 ns = Namespace('users', description='User related operations')
 
-@ns.route('/validate-access')
+@ns.route('/acceso')
 class ValidateUserAccess(Resource):
     @ns.expect(ValidateUserRequest.api_model, validate=True)
     def post(self):

@@ -3,8 +3,12 @@ from .extensions import db, api
 from dotenv import load_dotenv
 import os
 from app.controllers.user_controller import ns as user_ns
+import logging
+
 # Load environment variables from .env file
 load_dotenv()
+
+logging.basicConfig(level=logging.INFO)
 
 def create_app():
     app = Flask(__name__)
