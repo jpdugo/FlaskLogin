@@ -11,6 +11,9 @@ services:
       - .env
     depends_on:
       - db
+    volumes:
+      - ./:/app
+      - /app/.venv  # Exclude .venv from volume mount
 
   db:
     build:

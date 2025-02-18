@@ -6,9 +6,9 @@ class ValidateUserResponse:
 
     def to_dict(self):
         response = {
-            'message': self.message,
-            'status_code': self.status_code
+            "message": self.message,
+            "status_code": self.status_code
         }
         if self.user:
-            response['user'] = self.user
+            response["user"] = self.user
         return response
